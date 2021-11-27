@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Encuentra el Leopardo en 5 segundos</p>
-    <img style ="width: 20%;" src="imagen.jpeg">
-</body>
+<html lang="es">
+  <head>
+    <title>Busqueda Simple</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <ul>
+      <li>
+        <a class="paginas" href="busqueda_avanzada.html">Busqueda avanzada</a>
+      </li>
+      <li>
+        <a class="paginas" href="busqueda_img.html">Busqueda por imágenes </a>
+      </li>
+      <li style="float: right">
+        <a class="externo" href="https://mail.google.com/mail/u/0/?ogbl"
+          >Gmail</a
+        >
+      </li>
+      <li style="float: right">
+        <a
+          class="externo"
+          href="://www.google.com.pe/imghp?hl=es&authuser=0&ogbl"
+          >Imagenes</a
+        >
+      </li>
+    </ul>
+    <img id="google" src="imagenes/google.jpg" alt="imagen de google" />
+    <form
+      class="formulario"
+      action="https://www.google.com/search"
+      method="GET"
+    >
+      <input class="busqueda" type="text" name="q" /><br />
+      <input type="submit" value="Busqueda en  google" />
+      <input type="submit" value="Me siento con suerte" />
+    </form>
+  </body>
 </html>
